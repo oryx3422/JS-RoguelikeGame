@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Рогалик</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Стили -->
+  <style>
+    body { background: black; color: white; font-family: sans-serif; }
+    h1 { font-size: 24px; margin: 10px 0; }
+    .field-box { border: 2px solid #aaa; margin: 10px; float: left; }
+    .field { position: relative; width: 1000px; height: 600px; }
+    .tile {
+      position: absolute;
+      width: 25px; height: 25px;
+      background-size: cover;
+    }
+    .tileW { background-image: url("images/tile-W.png"); }
+    .tile { background-image: url("images/tile-.png"); }
+    .tileP { background-image: url("images/tile-P.png"); z-index: 10; }
+    .tileE { background-image: url("images/tile-E.png"); z-index: 10; }
+    .tileHP { background-image: url("images/tile-HP.png"); z-index: 8; }
+    .tileW { background-image: url("images/tile-W.png"); }
+	.tileSW { background-image: url("images/tile-SW.png"); z-index: 8; }
+
+    .health {
+      position: absolute;
+      top: 0; left: 0;
+      height: 3px;
+      background-color: red;
+      z-index: 20;
+    }
+    .tileP .health { background-color: lime; }
+  </style>
+
+  <!-- Скрипты -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <h1>Рогалик. Тест</h1>
+  <div class="field-box">
+    <div class="field"></div>
+  </div>
+</body>
+</html>
