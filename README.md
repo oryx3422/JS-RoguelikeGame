@@ -1,4 +1,4 @@
-# Roguelike game on pure JS
+# Roguelike game on JS
 
 <img src="images/demo.jpg">
 <ul>
